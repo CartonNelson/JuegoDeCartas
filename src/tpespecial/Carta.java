@@ -68,7 +68,8 @@ public class Carta {
 					
 					if(a1.esIgual((Atributo) c1.getAtributos().get(j))) {
 						result = true;
-						j=c1.atributos.size();
+						j=c1.atributos.size();//brake del for 
+						
 					}else{
 						result=false;
 					}

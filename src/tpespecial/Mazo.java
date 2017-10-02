@@ -26,6 +26,16 @@ public class Mazo {
 		return info;
 	}
 	
+	public boolean isEmpty(){
+		return(this.cartas.isEmpty());
+	}
+	
+
+	
+	public Carta getPrimera(){
+		
+			return (Carta) (this.cartas.get(0));
+	}
 	
 	public boolean checkCantAtr(Carta c1){
 		int cont=0;
@@ -71,5 +81,11 @@ public class Mazo {
 		this.cartas.clear();
 	}
 	
+	public void remove(){
+		this.cartas.remove(0);
+	}
 	
+	public int size(){
+		return this.cartas.size();
+	}
 }
